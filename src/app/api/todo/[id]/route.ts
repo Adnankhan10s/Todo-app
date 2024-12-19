@@ -19,7 +19,7 @@ export async function PUT (req:Request, context: { params: { id: string } }) {
   }
   
 }
-export async function GET(request: Request ,  context: { params: { id: string } }) {
+export async function GET(req:Request ,  context: { params: { id: string } }) {
   try {
     const {id} = context.params;
     await DbConnect();
